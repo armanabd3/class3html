@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Form</title>
+</head>
+<body bgcolor="yellow" >
+    <ul type="square">
+    <li>Picture</li>
+    <li>Name</li>
+    <li>Phone Number</li>
+    <li>Address</li>
+    </ul>
+    <h1>Visa Application Form</h1>
+
+    <form action="">
+        <fieldset>
+        <label>Upload Your Picture</label>
+        <input type="file">
+        <br>
+            <table border="1">
+                <tr>
+                    <td><label>Your Name:</label></td>
+                    <td><input type="text" placeholder="Enter Your name" required maxlength="15"></td>
+                </tr>
+       
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Age</label></td>
+                <td><input type="number" min="15" max="45"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:-</label></td>
+                <td><input type="radio" name="Gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="Gender" id="female">
+                    <label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td><label>Blood Group</label></td>
+                <td>
+                    <select>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label></td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><input type="address"></td>
+            </tr>
+            <tr>
+                <td><label>NID Number</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Passport Number</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Apply From</label></td>
+                <td><select>
+                    <optgroup label="Bangladesh">
+                        <option>Dhaka</option>
+                        <option>Chattagram</option>
+                        <option>Barishal</option>
+                        <option>Khulna</option>
+                        <option>Rajshahi</option>
+                        <option>Sylet</option>
+                    </optgroup>
+                    <optgroup label="India">
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Banglore</option>
+                        <option>Chennai</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+        </table> 
+    </fieldset>
+    <fieldset>
+        <h3>Personal Information</h3>
+        <table border="1">
+            <tr>
+                <td><label>Father's Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Mother's Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Favourite Color</label></td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>Facebook Url</label></td>
+                <td><input type="url"></td>                
+            </tr>
+            <tr>
+                <td><label>Profession</label></td>
+                <td><select>
+                    <option>Freelancer</option>
+                    <option>Doctor</option>
+                    <option>Musician</option>
+                    <option selected>BCS Cader</option>
+                    <option disabled>Student</option>            
+                </select></td>
+            </tr>
+        </table>
+        <label>Hobby: </label>
+        <input type="checkbox"  id="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="swiming">
+        <label for="swiming">Swiming</label>
+        <br>
+        <textarea placeholder="Describe about yourself" id="" cols="30" rows="10"></textarea>
+        <br>
+        <fieldset>
+            <label>Attachment</label>
+            <ol>
+                <li>Picture</li>
+                <li>Nid Copy</li>
+                <li>Passport Copy</li>
+                <li>Address Validation</li>
+            </ol>
+            <Table border="1">
+            <tr>
+                <td><label>Upload File</label></td>
+                <td><input type="file" name="pic" multiple></td>
+                
+            </tr>
+            </Table>
+
+        </fieldset>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset form">
+        </fieldset>    
+    </form>
+</body>
+</html>
